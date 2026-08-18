@@ -22,11 +22,12 @@ class Solution {
     int writeIndex=0;
     for (int readIndex=1;readIndex<nums.length;readIndex++)
     {
-        if(nums[readIndex]!=nums[writeIndex]){
-            nums[writeIndex+1]=nums[readIndex];
-           writeIndex++; 
+        if (nums[readIndex] != nums[writeIndex]) {
+            nums[writeIndex + 1] = nums[readIndex];
+            writeIndex++;
         }
     }
+    //return writeIndex + 1 (or count of unique elements). Since writeIndex starts at 0, after processing
     return writeIndex+1;
     }
 }
