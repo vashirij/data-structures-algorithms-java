@@ -1,8 +1,7 @@
 class Solution {
-public:
-    int removeElement(vector<int> & nums,int val){
+    public int removeElement(int[] nums, int val) {
         int writeIndex=0;
-        for (int readIndex=0;readIndex < nums.size();readIndex++){
+        for (int readIndex=0; readIndex < nums.length; readIndex++) {
             if(nums[readIndex]!=val){
                 //if they equal remove the element in array (move the next in index to current read) and read the next value in array
                nums[writeIndex]=nums[readIndex];
